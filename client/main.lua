@@ -11,7 +11,7 @@ CreateThread(function()
                     shootCount = shootCount - 1
                 end)
                 if shootCount > 11 then
-                    TriggerServerEvent('Veuqx:Event', GetPlayerServerId(PlayerId()), 'Too many shots: ' ..shootCount)
+                    TriggerServerEvent('Veuqx:Event', 'Too many shots: ' ..shootCount)
                 end
             end
         end
