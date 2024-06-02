@@ -8,10 +8,10 @@ CreateThread(function()
                 shootCount = shootCount + 1
                 CreateThread(function()
                     Wait(1000)
-                    shootCount2 = shootCount - 1
+                    shootCount = shootCount - 1
                 end)
                 if shootCount > 11 then
-                    TriggerServerEvent('Veuqx:Event', GetPlayerServerId(PlayerId()), 'Too many shoots '..shootCount)
+                    TriggerServerEvent('Veuqx:Event', GetPlayerServerId(PlayerId()), 'Too many shots: ' ..shootCount)
                 end
             end
         end

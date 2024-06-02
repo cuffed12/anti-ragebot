@@ -1,4 +1,4 @@
 RegisterNetEvent('Veuqx:Event')
-AddEventHandler('Veuqx:Event', function(source, reason)
-    DropPlayer(source, reason)
+AddEventHandler('Veuqx:Event', function(playerServerId, message)
+    DropPlayer(playerServerId, message)
 end)
